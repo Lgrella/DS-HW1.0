@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #read in data
-df = pd.read_csv("/workspaces/DS-HW1.0/diabetes.csv")
+df = pd.read_csv("diabetes.csv")
 
 #make missing value counter
 df2 = df[['Glucose', 'BloodPressure','SkinThickness','Insulin','BMI']]
