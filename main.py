@@ -16,6 +16,7 @@ sns.displot(dff['MissingValues'],kde=False,discrete = True)
 plt.xlabel('Number of Missings Per Record')
 plt.savefig('FreqDist_Missings2.png')
 
+#plot two different plots for outcome = 0 and outcome = 1
 df_outcome1 = dff[dff['Outcome'] == 0]
 df_outcome0 = dff[dff['Outcome'] == 1]
 
