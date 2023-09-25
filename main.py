@@ -37,7 +37,9 @@ def question_1_1():
     plot(df_outcome0,"FreqDist_Missings_Out0.png")
 
 def question_1_3():
-    #Part 3: Conditional Probability
+    '''
+    Part 3: Conditional Probability
+    '''
     FinalOutput = [[0 for i in range(5)] for i in range(5)]
     print(FinalOutput)
 
@@ -55,12 +57,14 @@ def question_1_3():
             FinalOutput[indexa][indexb] = finalprob
 
     df_output = pd.DataFrame(FinalOutput, columns=ListVars, index = ListVars)
+    return df_output
 
-
+print(question_1_3())
 
 def question1_4 ():
+    '''
     #Part 4
-
+    '''
     #loop through each of the five variables and turn it into a boolean
     dff1_4 = df[['Glucose', 'BloodPressure','SkinThickness','Insulin','BMI']]
     dff1_4 = dff1_4.map(lambda x: 1 if x != 0 else 0)
